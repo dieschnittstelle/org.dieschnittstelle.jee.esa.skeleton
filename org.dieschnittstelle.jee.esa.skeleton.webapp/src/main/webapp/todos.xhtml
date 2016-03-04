@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<head>
+<title>Todos</title>
+</head>
+<body>
+	<!--  display the stock items -->
+	<h3>Todos</h3>
+	<!--  create a table that show all todos -->
+	<h:dataTable value="#{vc.allTodos}" var="currentTodo" border="1"
+		id="todoTable">
+		<h:column>
+			<!--  include the name of the pos / touchpoint -->
+			<f:facet name="header">ID</f:facet>
+			<!--  insert the value reference here -->
+			#{currentTodo.id}
+		</h:column>
+		<h:column>
+			<!--  include the name of the pos / touchpoint -->
+			<f:facet name="header">Name</f:facet>
+			<!--  insert the value reference here -->
+			#{currentTodo.name}
+		</h:column>
+		<h:column>
+			<!--  include the name of the product -->
+			<f:facet name="header">Beschreibung</f:facet>
+			<!--  insert the value reference here -->
+			#{currentTodo.description}
+		</h:column>
+	</h:dataTable>
+	<!-- provide a form for creating a new todo -->
+	<h3>Neues Todo</h3>
+	<h:form id="todoForm">
+		<!--  display error messages, the for attribute coincides with the id attribute of element whose messages are displayed here -->
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><h:inputText id="name" value="#{vc.newTodo.name}" size="30">
+					</h:inputText></td>
+			</tr>
+			<!--  a checkbox that indicates whether we have a new or a returning customer -->
+			<tr>
+				<td>Beschreibung</td>
+				<td><h:inputTextarea id="description"
+						value="#{vc.newTodo.description}" size="30">
+					</h:inputTextarea></td>
+			</tr>
+		</table>
+		<!--  an example for using different button texts based on context information -->
+		<h:commandButton type="submit" id="createNewTodo" value="Erstellen"
+			action="#{vc.createNewTodo}" />
+	</h:form>
+
+</body>
+</html>

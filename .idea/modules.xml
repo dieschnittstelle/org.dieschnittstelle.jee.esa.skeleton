@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton/skeleton-all.iml" filepath="$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton/skeleton-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton.ear/skeleton-ear.iml" filepath="$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton.ear/skeleton-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton.ejbmodule/skeleton-ejbjpa.iml" filepath="$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton.ejbmodule/skeleton-ejbjpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton.webapp/skeleton-jsf.iml" filepath="$PROJECT_DIR$/org.dieschnittstelle.jee.esa.skeleton.webapp/skeleton-jsf.iml" />
+    </modules>
+  </component>
+</project>
