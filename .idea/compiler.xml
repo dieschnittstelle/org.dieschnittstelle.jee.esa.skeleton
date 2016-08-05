@@ -31,10 +31,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="org.dieschnittstelle.jee.esa.skeleton.ear" target="1.5" />
-      <module name="skeleton-all" target="1.5" />
-      <module name="skeleton-ear" target="1.5" />
+      <module name="skeleton-all" target="1.8" />
+      <module name="skeleton-ear" target="1.8" />
       <module name="skeleton-ejbjpa" target="1.5" />
-      <module name="skeleton-jsf" target="1.5" />
+      <module name="skeleton-jsf" target="1.8" />
       <module name="skeleton-war" target="1.5" />
     </bytecodeTargetLevel>
   </component>
