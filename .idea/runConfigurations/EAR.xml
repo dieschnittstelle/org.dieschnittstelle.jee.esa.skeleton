@@ -1,6 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="EAR" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 14.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
+  <configuration default="false" name="EAR" type="JBossConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="JBoss 18.0.1.Final" ALTERNATIVE_JRE_ENABLED="false">
     <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/org.dieschnittstelle.jee.esa.skeleton.webapp" />
+    <option name="COMMON_VM_ARGUMENTS" value="-Dresteasy.preferJacksonOverJsonB=true" />
     <option name="UPDATING_POLICY" value="restart-server" />
     <deployment>
       <artifact name="skeleton-ear:ear">
@@ -13,9 +14,9 @@
       <option name="DOMAIN" value="false" />
       <option name="SERVER_GROUP" />
       <option name="USERNAME" value="" />
-      <option name="PASSWORD" value="" />
+      <option name="CREDENTIAL_ALIAS" />
     </server-settings>
-    <predefined_log_file id="JBoss" enabled="true" />
+    <predefined_log_file enabled="true" id="JBoss" />
     <RunnerSettings RunnerId="Debug">
       <option name="DEBUG_PORT" value="62033" />
     </RunnerSettings>
